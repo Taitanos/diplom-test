@@ -1,0 +1,118 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url("images/background.jpg") no-repeat;
+}
+
+.header {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+}
+
+.header_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 15px 0px 0px;
+    flex-wrap: wrap;
+}
+
+.header_main_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 15px;
+    padding: 15px;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.header_login {
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    padding: 15px;
+    color: red;
+    border: red 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    width: 960px;
+    background-color: white;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.apart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.apart_info {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 560px;
+    background-color: chocolate;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+.apart_info_image {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    border: 1px solid red;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.apart_description {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 320px;
+    background-color: chartreuse;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+.apart_reviews {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    background-color: darkturquoise;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+.apart_info_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+    flex-wrap: wrap;
+}
