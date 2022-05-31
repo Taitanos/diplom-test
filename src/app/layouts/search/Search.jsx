@@ -59,7 +59,6 @@ const Search = () => {
 
                             <img className={s.search_icon} src={require(`../../assets/img/flats/${flat._id}/1.jpg`)}
                                  alt="Значок" onClick={() => {
-                                alert("hey")
                             }}/>
 
                             <div className={s.search_main}>
