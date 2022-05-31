@@ -1,19 +1,10 @@
 import React from "react";
-import s from "./trip.module.css";
+import s from "./Trip.module.css";
 
 
 const Trip = () => {
     return (
-        <div className={s.main}>
-            <div className={s.header}>
-                <div className={s.header_main}>
-                    <div className={s.header_main_title}>Главная</div>
-                    <div className={s.header_main_title}>Поиск</div>
-                    <div className={s.header_main_title}>Страны</div>
-                    <div className={s.header_main_title}>Путешествия</div>
-                </div>
-                <div className={s.header_login}>Личный кабинет</div>
-            </div>
+        <>
             <div className={s.container}>
                 <div className={s.trips}>
                     <div className={s.story}>
@@ -22,7 +13,7 @@ const Trip = () => {
                                 Julia Autinto
                             </div>
                             <div className={s.story_rating}>
-                               Рейтинг 4.5*
+                                Рейтинг 4.5*
                             </div>
                         </div>
                         <div className={s.story_title}>
@@ -103,7 +94,7 @@ const Trip = () => {
                 </div>
                 <div className={s.pages}>Страницы 1 2 3 .... n</div>
             </div>
-        </div>
+        </>
     )
 }
 
