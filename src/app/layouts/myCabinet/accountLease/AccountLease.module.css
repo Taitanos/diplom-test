@@ -40,8 +40,9 @@
     font-size: 18px;
 }
 .account_main {
-    height: 1100px;
+    min-height: 100vh;
 }
+
 .container {
     display: flex;
     width: 960px;
@@ -50,17 +51,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 25px;
+    min-height: 600px;
 }
 
 .account_bar {
     display: flex;
     flex-direction: column;
-    width: 110px;
+    width: 20%;
     padding: 10px;
     margin: 15px 0px 15px 15px;
 }
 .bar_main {
-    width: 100px;
     padding: 10px;
     margin: 5px 0px;
     border: 1px solid red;
@@ -68,7 +69,6 @@
     background-color: aliceblue;
 }
 .bar_lease {
-    width: 100px;
     padding: 10px;
     margin: 5px 0px;
     border: 1px solid red;
@@ -76,7 +76,6 @@
     background-color: beige;
 }
 .bar_trip {
-    width: 100px;
     padding: 10px;
     margin: 5px 0px;
     border: 1px solid red;
@@ -84,7 +83,6 @@
     background-color: aliceblue;
 }
 .bar_security {
-    width: 100px;
     padding: 10px;
     margin: 5px 0px;
     border: 1px solid red;
@@ -94,9 +92,8 @@
 
 .account_data {
     display: flex;
-    height: 1100px;
+    width: 70%;
     flex-direction: column;
-    margin: 25px;
 }
 .account_header {
     display: flex;
@@ -106,8 +103,8 @@
     display: flex;
     justify-content: center;
     width: 300px;
-    height: 30px;
     margin: 15px;
+    padding: 10px;
     border: 1px solid red;
     border-radius: 10px 120px / 120px;
     background-color: beige;
@@ -116,7 +113,7 @@
     display: flex;
     justify-content: center;
     width: 300px;
-    height: 30px;
+    padding: 10px;
     margin: 15px;
     border: 1px solid red;
     border-radius: 10px 120px / 120px;

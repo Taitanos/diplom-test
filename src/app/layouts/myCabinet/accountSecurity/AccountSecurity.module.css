@@ -41,7 +41,7 @@
     font-size: 18px;
 }
 .account_main {
-    height: 1100px;
+    min-height: 100vh;
 }
 .container {
     display: flex;
@@ -51,20 +51,21 @@
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 25px;
+    min-height: 600px;
 }
 .account_data{
     display: flex;
     flex-direction: row;
+    width: 70%;
 }
 .account_bar {
     display: flex;
     flex-direction: column;
-    width: 110px;
+    width: 20%;
     padding: 10px;
     margin: 15px 0px 15px 15px;
 }
 .bar_main {
-    width: 100px;
     padding: 10px;
     margin: 5px 0px;
     border: 1px solid red;
@@ -72,7 +73,6 @@
     background-color: aliceblue;
 }
 .bar_lease {
-    width: 100px;
     padding: 10px;
     margin: 5px 0px;
     border: 1px solid red;
@@ -80,7 +80,6 @@
     background-color: aliceblue;
 }
 .bar_trip {
-    width: 100px;
     padding: 10px;
     margin: 5px 0px;
     border: 1px solid red;
@@ -88,7 +87,6 @@
     background-color: aliceblue;
 }
 .bar_security {
-    width: 100px;
     padding: 10px;
     margin: 5px 0px;
     border: 1px solid red;
@@ -121,22 +119,22 @@
 }
 .security_newpass {
     width: 250px;
-    height: 30px;
     margin: 15px;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid red;
+    border-radius: 15px;
 }
 .security_comfpass {
     width: 250px;
-    height: 30px;
     margin: 15px;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid red;
+    border-radius: 15px;
 }
 .security_oldpass {
     width: 250px;
-    height: 30px;
     margin: 15px;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid red;
+    border-radius: 15px;
 }

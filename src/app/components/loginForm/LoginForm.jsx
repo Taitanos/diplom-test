@@ -7,7 +7,7 @@ const LoginForm = ({data, handleChange, handleCheckBoxChange, handleSubmit}) => 
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className={"text-white"}>
                 <TextField
                     onChange={handleChange}
                     name={"email"}
