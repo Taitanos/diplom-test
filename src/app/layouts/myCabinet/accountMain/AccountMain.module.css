@@ -1,0 +1,170 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url("../../../assets/images/background.jpg") no-repeat;
+}
+
+.header {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+}
+.header_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 15px 0px 0px;
+    flex-wrap: wrap;
+}
+.header_main_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 15px;
+    padding: 15px;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+.header_login{
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    padding: 15px;
+    color: red;
+    border: red 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+}
+.account_main {
+    height: 1100px;
+}
+.container {
+    display: flex;
+    width: 960px;
+    background-color: white;
+    margin: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+.account_data{
+    display: flex;
+    flex-direction: row;
+}
+.account_bar {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    padding: 10px;
+    margin: 15px 0px 15px 15px;
+}
+.bar_main {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 1px solid red;
+    border-radius: 10px 120px / 120px;
+    background-color: beige;
+}
+.bar_lease {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 1px solid red;
+    border-radius: 10px 120px / 120px;
+    background-color: aliceblue;
+}
+.bar_trip {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 1px solid red;
+    border-radius: 10px 120px / 120px;
+    background-color: aliceblue;
+}
+.bar_security {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 1px solid red;
+    border-radius: 10px 120px / 120px;
+    background-color: aliceblue;
+}
+
+.account_logo {
+    margin: 25px;
+}
+.account_avatar {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border: 1px red solid;
+    border-radius: 15px;
+}
+.account_rating {
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+    padding: 10px;
+}
+.account_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 15px;
+}
+.info_nickname {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.info_lastname {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.info_firstname {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.info_mail {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.info_birthday {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.info_gender {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid red;
+}
+.info_phone {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid red;
+}
