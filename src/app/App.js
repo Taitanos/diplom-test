@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import s from "./App.module.css";
 import {Route, Routes} from "react-router-dom";
 import NavBar from "./components/navBar/NavBar";
@@ -10,11 +10,20 @@ import SearchApartment from "./layouts/SearchApartment";
 import AccountLease from "./layouts/myCabinet/accountLease/AccountLease";
 import AccountTrip from "./layouts/myCabinet/accountTrip/AccountTrip";
 import AccountSecurity from "./layouts/myCabinet/accountSecurity/AccountSecurity";
+import api from "./api";
 
 function App() {
 
     const [data, setData] = useState({email: "", password: "", stayOn: false, name: ""});
     const [auth, setAuth] = useState(false);
+    const [allFlats, setAllFlats] = useState();
+    const [startTrip, setStartTrip] = useState(0)
+    const [endTrip, setEndTrip] = useState(0)
+    const [toggleSearch, setToggleSearch] = useState(false);
+
+    useEffect(() => {
+        api.flats.fetchAll().then(data => setAllFlats(data));
+    }, []);
 
     const handleChange = ({target}) => {
         setData((prevState) => ({
@@ -30,7 +39,6 @@ function App() {
         }));
     }
 
-
     const inToggleAuth = () => {
         setAuth(true);
     }
@@ -39,7 +47,7 @@ function App() {
         setAuth(false);
     }
 
-    const handleSubmit = (e) => {
+    const handleFormSubmit = (e) => {
         e.preventDefault();
         inToggleAuth()
         console.log(data.name);
@@ -52,8 +60,20 @@ function App() {
                 <Route path={"/"} element={<Main/>}/>
                 <Route path={"/countries"} element={<Countries/>}/>
                 <Route path={"/search"}>
-                    <Route path={":apartmentId"} element={<SearchApartment/>}/>
-                    <Route path={""} element={<SearchApartment/>}/>
+                    <Route path={":apartmentId"} element={<SearchApartment allFlats={allFlats}
+                                                                           setEndTrip={setEndTrip}
+                                                                           setStartTrip={setStartTrip}
+                                                                           startTrip={startTrip}
+                                                                           endTrip={endTrip}
+                                                                           toggleSearch={toggleSearch}
+                                                                           setToggleSearch={setToggleSearch}/>}/>
+                    <Route path={""} element={<SearchApartment allFlats={allFlats}
+                                                               setEndTrip={setEndTrip}
+                                                               setStartTrip={setStartTrip}
+                                                               startTrip={startTrip}
+                                                               endTrip={endTrip}
+                                                               toggleSearch={toggleSearch}
+                                                               setToggleSearch={setToggleSearch}/>}/>
                 </Route>
                 <Route path={"/trip"} element={<Trip/>}/>
 
@@ -61,7 +81,7 @@ function App() {
                 <Route path={"/login"}>
                     <Route path={""} element={<Login auth={auth} data={data} handleChange={handleChange}
                                                      handleCheckBoxChange={handleCheckBoxChange}
-                                                     handleSubmit={handleSubmit}/>}/>
+                                                     handleSubmit={handleFormSubmit}/>}/>
                     <Route exact path={"arenda"} element={<AccountLease/>}/>
                     <Route exact path={"trip"} element={<AccountTrip/>}/>
                     <Route exact path={"security"} element={<AccountSecurity/>}/>

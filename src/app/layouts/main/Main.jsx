@@ -29,7 +29,7 @@ const Main = () => {
                             <input type="number"/>
                         </div>
                         <div>
-                            <input type="button"/>
+                            <button>Поиск</button>
                         </div>
                     </div>
                 </form>
