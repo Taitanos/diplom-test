@@ -1,14 +1,20 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import s from "./AccountMain.module.css";
 import acc from "../../../assets/images/avatar.jpg"
 import {useNavigate} from "react-router-dom";
+import api from "../../../api";
 
 const AccountMain = () => {
 
+    const [user, setUser] = useState()
     const navigate = useNavigate()
     const handleChangePage = (str) => {
         navigate(str)
     }
+
+    useEffect(() => {
+        api.user.fetchAll().then((data) => setUser(data))
+    }, [])
 
     return (
         <div>
@@ -29,13 +35,13 @@ const AccountMain = () => {
                             </div>
                         </div>
                         <div className={s.account_information}>
-                            <div className={s.info_nickname}>Nickname</div>
-                            <div className={s.info_lastname}>Фамилия</div>
-                            <div className={s.info_firstname}>Имя</div>
-                            <div className={s.info_mail}>Почта</div>
-                            <div className={s.info_birthday}>Дата рождения</div>
-                            <div className={s.info_gender}>Пол</div>
-                            <div className={s.info_phone}>Телефон</div>
+                            <div className={s.info_nickname}>{user && user.nickname}</div>
+                            <div className={s.info_lastname}>{user && user.lastName}</div>
+                            <div className={s.info_firstname}>{user && user.name}</div>
+                            <div className={s.info_mail}>{user && user.mail}</div>
+                            <div className={s.info_birthday}>{user && user.birthday}</div>
+                            <div className={s.info_gender}>{user && user.sex}</div>
+                            <div className={s.info_phone}>{user && user.phone}</div>
                         </div>
                     </div>
                 </div>
