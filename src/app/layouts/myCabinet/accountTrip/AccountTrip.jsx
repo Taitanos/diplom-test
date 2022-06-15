@@ -29,7 +29,7 @@ const AccountTrip = () => {
                         <div className={s.story}>
                             <div className={s.story_header}>
                                 <div className={s.story_author}>
-                                    Julia Autinto
+                                    Тукарев Николай
                                 </div>
                                 <div className={s.story_rating}>
                                     Рейтинг 4.5*

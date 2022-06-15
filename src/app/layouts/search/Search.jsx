@@ -37,7 +37,7 @@ const Search = () => {
                 <form id={"submit"}>
                     <div className={s.search}>
                         <div>
-                            <input type="text"/>
+                            <input className="opacity-50" type="text" defaultValue={"Страна посещения"}/>
                         </div>
                         <div>
                             <input type="date" onChange={handler}/>
@@ -46,10 +46,13 @@ const Search = () => {
                             <input type="date" onChange={handler}/>
                         </div>
                         <div>
-                            <input type="number"/>
+                            <input className="opacity-50" type="text" defaultValue={"Количество людей"}/>
                         </div>
                         <div>
                             <button>Поиск</button>
+                        </div>
+                        <div>
+                            <button>Сброс</button>
                         </div>
                     </div>
                 </form>

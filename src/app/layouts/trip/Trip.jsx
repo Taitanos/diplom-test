@@ -41,7 +41,7 @@ const Trip = () => {
                                 Julia Autinto
                             </div>
                             <div className={s.story_rating}>
-                                4.5*
+                                Рейтинг 4.5*
                             </div>
                         </div>
                         <div className={s.story_title}>
@@ -65,7 +65,7 @@ const Trip = () => {
                                 Julia Autinto
                             </div>
                             <div className={s.story_rating}>
-                                4.5*
+                                Рейтинг 4.5*
                             </div>
                         </div>
                         <div className={s.story_title}>
