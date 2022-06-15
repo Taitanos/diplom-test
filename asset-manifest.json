@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/diplom-test/static/css/main.e3ace19f.css",
+    "main.js": "/diplom-test/static/js/main.0da54551.js",
+    "static/js/787.28cb0dcd.chunk.js": "/diplom-test/static/js/787.28cb0dcd.chunk.js",
+    "static/media/background.jpg": "/diplom-test/static/media/background.ecbad5c2033d347c1d53.jpg",
+    "static/media/2.jpg": "/diplom-test/static/media/2.0782eaafe2288bd3f195.jpg",
+    "static/media/3.jpg": "/diplom-test/static/media/3.35ecd23e67c7c42b508d.jpg",
+    "static/media/1.jpg": "/diplom-test/static/media/1.e758b449486cacb0bb16.jpg",
+    "static/media/aparts.jpg": "/diplom-test/static/media/aparts.9b9e7d376446eac40764.jpg",
+    "static/media/avatar.jpg": "/diplom-test/static/media/avatar.1b25e541af910a34c642.jpg",
+    "static/media/Cyprus.jpg": "/diplom-test/static/media/Cyprus.0bc203d3494e5558f380.jpg",
+    "static/media/Thailand.jpg": "/diplom-test/static/media/Thailand.47e6c155a5b2da90dfe9.jpg",
+    "static/media/Spain.jpg": "/diplom-test/static/media/Spain.1b8161348522a6382384.jpg",
+    "static/media/France.jpg": "/diplom-test/static/media/France.c47e5d759dfc86a431d3.jpg",
+    "static/media/Italy.jpg": "/diplom-test/static/media/Italy.d1b75cb930486146d23f.jpg",
+    "index.html": "/diplom-test/index.html",
+    "main.e3ace19f.css.map": "/diplom-test/static/css/main.e3ace19f.css.map",
+    "main.0da54551.js.map": "/diplom-test/static/js/main.0da54551.js.map",
+    "787.28cb0dcd.chunk.js.map": "/diplom-test/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3ace19f.css",
+    "static/js/main.0da54551.js"
+  ]
+}
