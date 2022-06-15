@@ -605,7 +605,7 @@ const lodgingObjects = [
 const fetchAll = () => new Promise((resolve) => {
     window.setTimeout(function () {
         resolve(lodgingObjects);
-    }, 1000)
+    }, 1)
 });
 
 const getById = (id) =>
@@ -616,7 +616,7 @@ const getById = (id) =>
                     (user) => user._id === id
                 )
             );
-        }, 1000);
+        }, 1);
     });
 
 export default {

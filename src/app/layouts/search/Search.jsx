@@ -1,26 +1,20 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import s from "./Search.module.css";
-import api from "../../api";
 import {paginate} from "../../utils/paginate";
 import Pagination from "../../components/Pagination";
 import {useNavigate} from "react-router-dom";
+import SearchApartment from "../SearchApartment";
 
-function handler(e) {
-    // alert(e.target.value);
-}
 
-const Search = () => {
+const Search = ({allFlats, setStartTrip, setEndTrip, startTrip, endTrip, toggleSearch, setToggleSearch}) => {
 
     const navigate = useNavigate();
-    const [allFlats, setAllFlats] = useState();
     const pageSize = 4;
-    const count = allFlats && allFlats.length;
     const [currentPage, setCurrentPage] = useState(1);
+    const [filteredFlat, setFilteredFlat] = useState()
 
-    useEffect(() => {
-        api.flats.fetchAll().then(data => setAllFlats(data));
-    }, []);
-    let flats = paginate(allFlats, currentPage, pageSize);
+
+    const count = toggleSearch ? filteredFlat && filteredFlat.length : allFlats && allFlats.length;
 
 
     const handlePageChange = (pageIndex) => {
@@ -30,7 +24,39 @@ const Search = () => {
         navigate(`/search/${id}`)
     }
 
+    const handlerDateStart = (e) => {
+        setStartTrip(Date.parse(e.target.value))
+    }
+    const handlerDateEnd = (e) => {
+        setEndTrip(Date.parse(e.target.value))
+    }
 
+
+
+
+    const handlerToggleSearch = () => {
+        return allFlats && setFilteredFlat(allFlats.filter((flat) => Date.parse(flat.start_rent) <= startTrip && Date.parse(flat.end_rent) >= endTrip))
+    }
+
+
+    // const handleFilterFlats = () => {
+    //     const flats = handlerToggleSearch()
+    //     return setFilteredFlat(flats)
+    //     // setToggleSearch(true)
+    // }
+    const handleFilterFlats = () => {
+        setToggleSearch(true)
+        handlerToggleSearch()
+        console.log("filterFlat = ", filteredFlat)
+    }
+    const handlerClearFlats = () => {
+        setToggleSearch(false);
+    }
+
+    let flats = toggleSearch ? paginate(filteredFlat, currentPage, pageSize) : paginate(allFlats, currentPage, pageSize);
+
+    // let flats = paginate(allFlats, currentPage, pageSize);
+    console.log("flats = ", filteredFlat)
     return (
         <>
             <div className={s.container}>
@@ -40,21 +66,22 @@ const Search = () => {
                             <input type="text"/>
                         </div>
                         <div>
-                            <input type="date" onChange={handler}/>
+                            <input type="date" onChange={handlerDateStart}/>
                         </div>
                         <div>
-                            <input type="date" onChange={handler}/>
+                            <input type="date" onChange={handlerDateEnd}/>
                         </div>
                         <div>
                             <input type="number"/>
                         </div>
                         <div>
-                            <button>Поиск</button>
+                            <button onClick={handleFilterFlats} type={'button'}>Поиск</button>
+                            <button onClick={handlerClearFlats} type={'button'}>Cброс</button>
                         </div>
                     </div>
                 </form>
                 <div className={s.search_aparts}>
-                    {flats.map((flat) => (
+                    {flats && flats.map((flat) => (
                         <div className={s.search_apart} key={flat._id} onClick={() => handleClickFlat(flat._id)}>
 
                             <img className={s.search_icon} src={require(`../../assets/img/flats/${flat._id}/1.jpg`)}
