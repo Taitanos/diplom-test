@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/diplom-test/static/css/main.e3ace19f.css",
-    "main.js": "/diplom-test/static/js/main.0da54551.js",
+    "main.js": "/diplom-test/static/js/main.c71b42b5.js",
     "static/js/787.28cb0dcd.chunk.js": "/diplom-test/static/js/787.28cb0dcd.chunk.js",
     "static/media/background.jpg": "/diplom-test/static/media/background.ecbad5c2033d347c1d53.jpg",
     "static/media/2.jpg": "/diplom-test/static/media/2.0782eaafe2288bd3f195.jpg",
@@ -16,11 +16,11 @@
     "static/media/Italy.jpg": "/diplom-test/static/media/Italy.d1b75cb930486146d23f.jpg",
     "index.html": "/diplom-test/index.html",
     "main.e3ace19f.css.map": "/diplom-test/static/css/main.e3ace19f.css.map",
-    "main.0da54551.js.map": "/diplom-test/static/js/main.0da54551.js.map",
+    "main.c71b42b5.js.map": "/diplom-test/static/js/main.c71b42b5.js.map",
     "787.28cb0dcd.chunk.js.map": "/diplom-test/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3ace19f.css",
-    "static/js/main.0da54551.js"
+    "static/js/main.c71b42b5.js"
   ]
 }
