@@ -39,11 +39,6 @@ const Search = ({allFlats, setStartTrip, setEndTrip, startTrip, endTrip, toggleS
     }
 
 
-    // const handleFilterFlats = () => {
-    //     const flats = handlerToggleSearch()
-    //     return setFilteredFlat(flats)
-    //     // setToggleSearch(true)
-    // }
     const handleFilterFlats = () => {
         setToggleSearch(true)
         handlerToggleSearch()
@@ -55,7 +50,6 @@ const Search = ({allFlats, setStartTrip, setEndTrip, startTrip, endTrip, toggleS
 
     let flats = toggleSearch ? paginate(filteredFlat, currentPage, pageSize) : paginate(allFlats, currentPage, pageSize);
 
-    // let flats = paginate(allFlats, currentPage, pageSize);
     console.log("flats = ", filteredFlat)
     return (
         <>
@@ -77,9 +71,6 @@ const Search = ({allFlats, setStartTrip, setEndTrip, startTrip, endTrip, toggleS
                         <div>
                             <button onClick={handleFilterFlats} type={'button'}>Поиск</button>
                             <button onClick={handlerClearFlats} type={'button'}>Cброс</button>
-                        </div>
-                        <div>
-                            <button>Сброс</button>
                         </div>
                     </div>
                 </form>
