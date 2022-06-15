@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f706b23.css",
+    "main.js": "/static/js/main.e864695d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/background.jpg": "/static/media/background.ecbad5c2033d347c1d53.jpg",
+    "static/media/2.jpg": "/static/media/2.0782eaafe2288bd3f195.jpg",
+    "static/media/3.jpg": "/static/media/3.35ecd23e67c7c42b508d.jpg",
+    "static/media/1.jpg": "/static/media/1.e758b449486cacb0bb16.jpg",
+    "static/media/aparts.jpg": "/static/media/aparts.9b9e7d376446eac40764.jpg",
+    "static/media/avatar.jpg": "/static/media/avatar.1b25e541af910a34c642.jpg",
+    "static/media/Cyprus.jpg": "/static/media/Cyprus.0bc203d3494e5558f380.jpg",
+    "static/media/Thailand.jpg": "/static/media/Thailand.47e6c155a5b2da90dfe9.jpg",
+    "static/media/Spain.jpg": "/static/media/Spain.1b8161348522a6382384.jpg",
+    "static/media/France.jpg": "/static/media/France.c47e5d759dfc86a431d3.jpg",
+    "static/media/Italy.jpg": "/static/media/Italy.d1b75cb930486146d23f.jpg",
+    "index.html": "/index.html",
+    "main.7f706b23.css.map": "/static/css/main.7f706b23.css.map",
+    "main.e864695d.js.map": "/static/js/main.e864695d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f706b23.css",
+    "static/js/main.e864695d.js"
+  ]
+}
